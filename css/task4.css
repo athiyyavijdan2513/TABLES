@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: auto;
+    background-color: #f3f3fb;
+}
+#main{
+    width: 100%;
+    height: 590px;
+    font-family: arial, sans-serif;
+}
+table {
+    background-color: white;
+    width: 98.5%;
+    height: 97%;
+    border-collapse: collapse;
+    align-items: center;
+    margin: 10px;
+
+}
+thead{
+    width: auto;
+    height: 90px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(142, 184, 160);
+}
+thead  .align{
+    text-align: center;
+    width: 55%;
+}
+.container{
+    position: relative;
+    font-size: 22px;
+    padding: 0 50px 0 25px;
+}
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    border-radius: 4px;
+    background-color: #ddd;
+    cursor: pointer;
+}
+ /* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: rgb(142, 184, 160);
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+  }
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 5.5px;
+  top: 1px;
+  width: 5px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  }
+img {
+    width: 60px;
+    height: 60px;
+}
+tbody .text{
+    padding-left: 60px;
+}
+tbody td h4{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8em;
+}
+tbody td p{
+    font-weight: 200;
+    font-size: 12px;
+    color: #aaa;
+}
+.left {
+    width:9%;
+}
+tbody .icon-l{
+    padding-left: 150px;
+}
+tbody .icon-l button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding-right: 10px;
+    color: rgb(255, 68, 0);
+    font-size: 13px;
+}
+tbody .box{
+    width: 35px;
+    padding: 9px;
+    background: transparent;
+    border: 1.5px solid #999;
+    border-radius: 3px;
+}
+.space{
+    width: 7%;
+}
+.center{
+    text-align: left;
+}

@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: auto;
+}
+#main{
+    width: 100%;
+    height: 598px;
+    background-color: #f3f3fb;
+    font-family: arial, sans-serif;
+}
+.heading{
+    width: 100%;
+    height: 85px;
+    text-align: center;
+    align-items: center;
+    padding-top: 15px;
+}
+.heading h1{
+    font-weight: 400;
+}
+table {
+    background-color: white;
+    width: 85%;
+    height: 75%;
+    margin-left: 90px;
+    border-collapse: collapse;
+}
+thead{
+    width: auto;
+    height: 70px;
+    font-size: 15px;
+    color: #666;
+}
+thead tr{
+    border-bottom: 3px solid #e4ebf4;
+}
+thead .left{
+    padding-left:150px ;
+}
+tbody tr{
+    border-bottom: 2px solid #f3f3fb;
+}
+tbody .tr{
+    display: flex;
+}
+.container{
+    position: relative;
+    font-size: 22px;
+    padding: 0 30px 0 15px;
+}
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    border-radius: 4px;
+    background-color: #eee;
+    cursor: pointer;
+}
+ /* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #50ccb5;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+  }
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 5.5px;
+  top: 1px;
+  width: 5px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  }
+.tr  .text{
+    line-height: 1.7em;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.tr .text a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+.tr .text p{
+    font-size: 13px;
+    color: #666;
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.div{
+    width:100px;
+    height:auto;
+    border-radius: 20px;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    padding: 3px 5px;
+}
+.div p{
+    font-size: 13px;
+    padding-left: 2px;
+}
+.div .icon{
+    font-size: 10px;
+}
+.green{
+    background-color: rgb(211, 253, 220);
+    color: rgb(48, 182, 48);
+    width: 50px;
+}
+.orange{
+    background-color: rgb(252, 234, 213);
+    color: rgb(243, 171, 37);
+    width: 170px;
+}
+tbody .icon-l button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding-right: 10px;
+    color: rgb(255, 68, 0);
+    font-size: 10px;
+}
